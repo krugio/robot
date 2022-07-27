@@ -1,33 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20220727 01:13:36.048" rpa="false" schemaversion="3">
-<suite id="s1" name="Tittle" source="C:\adb\robot\web\tittle.robot">
-<test id="s1-t1" name="Deve validar o titulo" line="6">
+<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20220727 01:44:25.485" rpa="false" schemaversion="3">
+<suite id="s1" name="Checkbox" source="C:\adb\robot\web\checkbox.robot">
+<test id="s1-t1" name="Deve validar o titulo" line="7">
 <kw name="Open Browser" library="SeleniumLibrary">
-<arg>https://training-wheels-protocol.herokuapp.com/</arg>
+<arg>${url}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220727 01:13:36.457" level="INFO">Opening browser 'chrome' to base url 'https://training-wheels-protocol.herokuapp.com/'.</msg>
-<status status="PASS" starttime="20220727 01:13:36.456" endtime="20220727 01:13:41.491"/>
+<msg timestamp="20220727 01:44:25.944" level="INFO">Opening browser 'chrome' to base url 'https://training-wheels-protocol.herokuapp.com/'.</msg>
+<status status="PASS" starttime="20220727 01:44:25.943" endtime="20220727 01:44:32.864"/>
 </kw>
-<kw name="Tittle Should Be">
-<arg>Tetststs</arg>
-<msg timestamp="20220727 01:13:41.504" level="FAIL">No keyword with name 'Tittle Should Be' found. Did you mean:
-    SeleniumLibrary.Title Should Be</msg>
-<status status="FAIL" starttime="20220727 01:13:41.504" endtime="20220727 01:13:41.504"/>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}/checkboxes</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220727 01:44:32.866" level="INFO">Opening url 'https://training-wheels-protocol.herokuapp.com//checkboxes'</msg>
+<status status="PASS" starttime="20220727 01:44:32.865" endtime="20220727 01:44:33.250"/>
 </kw>
-<status status="FAIL" starttime="20220727 01:13:36.452" endtime="20220727 01:13:41.506">No keyword with name 'Tittle Should Be' found. Did you mean:
-    SeleniumLibrary.Title Should Be</status>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>id:thor</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20220727 01:44:33.252" level="INFO">Selecting checkbox 'id:thor'.</msg>
+<status status="PASS" starttime="20220727 01:44:33.251" endtime="20220727 01:44:33.480"/>
+</kw>
+<kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
+<arg>id:thor</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<msg timestamp="20220727 01:44:33.481" level="INFO">Verifying checkbox 'id:thor' is selected.</msg>
+<status status="PASS" starttime="20220727 01:44:33.480" endtime="20220727 01:44:33.525"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220727 01:44:38.529" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220727 01:44:33.526" endtime="20220727 01:44:38.529"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220727 01:44:38.530" endtime="20220727 01:44:41.014"/>
+</kw>
+<status status="PASS" starttime="20220727 01:44:25.942" endtime="20220727 01:44:41.016"/>
 </test>
-<status status="FAIL" starttime="20220727 01:13:36.051" endtime="20220727 01:13:41.509"/>
+<status status="PASS" starttime="20220727 01:44:25.488" endtime="20220727 01:44:41.022"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Tittle">Tittle</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Checkbox">Checkbox</stat>
 </suite>
 </statistics>
 <errors>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20220727 01:21:37.840" rpa="false" schemaversion="3">
+<suite id="s1" name="Tittle" source="C:\adb\robot\web\tittle.robot">
+<test id="s1-t1" name="Deve validar o titulo" line="6">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://training-wheels-protocol.herokuapp.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220727 01:21:38.290" level="INFO">Opening browser 'chrome' to base url 'https://training-wheels-protocol.herokuapp.com/'.</msg>
+<status status="PASS" starttime="20220727 01:21:38.289" endtime="20220727 01:21:43.999"/>
+</kw>
+<kw name="Tittle Should Be">
+<arg>Tetststs</arg>
+<msg timestamp="20220727 01:21:44.008" level="FAIL">No keyword with name 'Tittle Should Be' found. Did you mean:
+    SeleniumLibrary.Title Should Be</msg>
+<status status="FAIL" starttime="20220727 01:21:44.007" endtime="20220727 01:21:44.008"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20220727 01:21:44.009" endtime="20220727 01:21:44.009"/>
+</kw>
+<status status="FAIL" starttime="20220727 01:21:38.287" endtime="20220727 01:21:44.012">No keyword with name 'Tittle Should Be' found. Did you mean:
+    SeleniumLibrary.Title Should Be</status>
+</test>
+<status status="FAIL" starttime="20220727 01:21:37.843" endtime="20220727 01:21:44.015"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tittle">Tittle</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
